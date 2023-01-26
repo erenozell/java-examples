@@ -12,9 +12,12 @@
 
 public class UserRepository {
     private String name;
+    private int index = 0;
     private User[] userList;
     
 // {null,null,null,...}
+// null,null,null
+// Obj, null,null,null
 
     UserRepository(String name, int length){
         this.userList= new User[length];
@@ -22,8 +25,8 @@ public class UserRepository {
     }
 
 
-    public void addUser(User user){
-        userList[1]= user;
+    public boolean addUser(User user){
+        
     }
 
     public String getName() {
